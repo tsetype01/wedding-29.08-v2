@@ -172,6 +172,30 @@
     }
 
     /* confetti canvas handled by JS */
+
+    .toy-ieleri { margin-top:28px; text-align:center; opacity:0; animation:aFadeUp .85s ease 1.6s forwards; }
+    .toy-ieleri-label {
+      font-family:"Cormorant Garamond",serif; font-style:italic;
+      font-size:.9rem; letter-spacing:.28em; color:#b07d5a;
+      display:block; margin-bottom:6px;
+    }
+    .toy-ieleri-names {
+      font-family:"Cormorant Garamond",serif;
+      font-size:clamp(1.3rem,4vw,1.9rem); font-weight:300;
+      color:#3d2b1f; letter-spacing:.06em;
+      background:linear-gradient(90deg,#b07d5a 30%,#e8c090 50%,#b07d5a 70%);
+      background-size:250% auto;
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+      animation:aShimmer 6s ease-in-out 2.4s infinite;
+    }
+    .toy-ieleri-names em {
+      -webkit-text-fill-color:transparent;
+      background:linear-gradient(90deg,#c8956c 30%,#f0c890 50%,#c8956c 70%);
+      background-size:250% auto;
+      -webkit-background-clip:text; background-clip:text;
+      font-style:normal;
+      animation:aShimmer 6s ease-in-out 2.4s infinite;
+    }
   </style>
 </head>
 <body>
@@ -215,6 +239,11 @@
   <div class="start-time-badge">
     <span class="clock-icon">&#128340;</span>
     <span data-i18n="start-time">Басталуы сағат 17:00</span>
+  </div>
+
+  <div class="toy-ieleri">
+    <span class="toy-ieleri-label" data-i18n="hosts-label">Той иелері</span>
+    <p class="toy-ieleri-names">Қайырбай <em>&amp;</em> Анар</p>
   </div>
   <div class="scroll-hint">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
@@ -337,6 +366,7 @@
       'success-msg':   '✓ Рахмет! Жауабыңыз қабылданды. Сізді тойымызда күтеміз!',
       'error-msg':     '✗ Қате орын алды. Қайталап көріңіз.',
       'footer-sub':    'Сүйіспеншілікпен күтеміз · 29.08.2026',
+      'hosts-label':  'Той иелері',
       'cd-label':     'Тойға дейін',
       'cd-days':      'күн',
       'cd-hours':     'сағат',
@@ -368,6 +398,7 @@
       'success-msg':   '✓ Спасибо! Ваш ответ получен. Ждём вас на нашем празднике!',
       'error-msg':     '✗ Произошла ошибка. Попробуйте ещё раз.',
       'footer-sub':    'С любовью ждём вас · 29.08.2026',
+      'hosts-label':  'Той иелері',
       'cd-label':     'До свадьбы',
       'cd-days':      'дней',
       'cd-hours':     'часов',
